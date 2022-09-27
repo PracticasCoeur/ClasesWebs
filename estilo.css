@@ -1,0 +1,106 @@
+/* div{
+    background-color: red;
+} */
+.miclase{
+    background-color: red;
+}
+.miclase::before{
+    content: 'jelouu';
+    color: white;
+    background-color: blue;
+}
+.miclase::after{
+    background-color: gray;
+    content: 'aloou';
+    color: green;
+
+} 
+.miclase2{
+    background-color: blue;
+} 
+/* .miclase.miclase2{
+    background-color: aqua;
+} */
+
+/* clase 2 13/09/2022 */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+.contenedor{
+
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    background-color: khaki;
+    gap: 20px;
+    
+}
+.contenedor div{
+    /* display: inline-block; */
+    width: 200px;
+    height: 200px;
+}
+.caja1{
+
+    background-color: green;
+    
+}
+.caja1:hover{
+    transition: all 1s ease-in;
+    transform: translate(200px) rotate(20deg) scale(1.5);
+    background-color: aqua;
+    text-align: center;
+}
+.caja2{
+    background-color: blue;
+}
+.caja2:hover{
+    transition: all 1s ease-in;
+    transform: rotate(360deg) scale(3);
+    width: 1920px;
+    height: 100%;
+}
+.caja3:hover{
+    transition: all 1s ease-in;
+    transform: rotate(360deg) scale(3);
+    width: 1920px;
+    height: 100%;
+}
+.caja4:hover{
+    transition: all 1s ease-in;
+    transform: rotate(360deg) scale(3);
+    width: 1920px;
+    height: 100%;
+}
+.caja3{
+    background-color: darkviolet;
+
+}
+.caja4{
+    background-color: lightblue;
+}
+
+@media (max-width:768px){
+    .contenedor{
+
+        background-color: red;
+
+        
+    }
+}
+@media (max-width:480px){
+    .contenedor{
+        background-color: pink;
+        flex-direction: column;
+    }
+    .caja3{
+        display: none;
+    
+    }
+}
